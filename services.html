@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Copy All and Print (CAP) — Professional printing shop. Business cards, flyers, pamphlets, roll-up banners, large format printing & more. Quality printing, fast service."/>
+  <title>Copy All and Print | Quality Printing. Fast Service.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Copy All and Print Logo" onerror="this.src='images/logo.png'" width="100%!important">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" id="sDD" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu" aria-labelledby="sDD">
+            <li><a class="dropdown-item" href="services.html#business-cards">💼 Business Cards</a></li>
+            <li><a class="dropdown-item" href="services.html#flyers">📢 Flyers &amp; Pamphlets</a></li>
+            <li><a class="dropdown-item" href="services.html#brochures">📄 Brochures &amp; Booklets</a></li>
+            <li><a class="dropdown-item" href="services.html#banners">🎌 Banners &amp; Roll-Ups</a></li>
+            <li><a class="dropdown-item" href="services.html#large-format">🖨️ Large Format Printing</a></li>
+            <li><a class="dropdown-item" href="services.html#stationery">✉️ Stationery &amp; More</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="services.html" style="color:var(--primary);font-weight:700;">View All Services →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="yearbook.html">Yearbooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-nav-cta" href="contact.html"><i class="fas fa-paper-plane me-1"></i> Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO with real banner image background -->
+<section style="padding:180px 0 90px;position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;">
+  <div style="position:absolute;inset:0;background-image:url('images/hero-banners-opt.jpg');background-size:cover;background-position:center;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,8,40,.88) 0%,rgba(0,20,80,.72) 50%,rgba(0,0,0,.35) 100%);"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Services</li></ol>
+    </nav>
+    <h1 style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);color:#fff;margin-bottom:12px;">Our Print <span style="color:var(--accent-yellow);">Services</span></h1>
+    <p style="color:rgba(255,255,255,.75);font-size:1.05rem;max-width:560px;margin-bottom:24px;">25+ professional printing solutions for businesses, events &amp; individuals</p>
+    <div class="rush-badge"><i class="fas fa-bolt"></i> Rush Service Available — Please Enquire</div>
+  </div>
+</section>
+
+<!-- QUICK NAV PILLS -->
+<div style="background:#fff;border-bottom:2px solid var(--light-bg);padding:16px 0;position:sticky;top:140px;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.06);">
+  <div class="container">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+      <a href="#business-cards" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">💼 Business Cards</a>
+      <a href="#flyers" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">📢 Flyers &amp; Pamphlets</a>
+      <a href="#brochures" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">📄 Brochures</a>
+      <a href="#banners" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">🎌 Banners</a>
+      <a href="#large-format" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">🖨️ Large Format</a>
+      <a href="#stationery" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--light-bg);color:var(--primary);border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;text-decoration:none;transition:all .3s;">✉️ Stationery &amp; More</a>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES INTRO STRIP -->
+<section style="padding:50px 0;background:var(--light-bg);">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3 animate-on-scroll"><div style="padding:22px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:var(--secondary);margin-bottom:8px;"><i class="fas fa-bolt"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.88rem;">Rush Service</div><div style="color:var(--gray);font-size:.76rem;">Please enquire</div></div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-1"><div style="padding:22px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:var(--primary);margin-bottom:8px;"><i class="fas fa-award"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.88rem;">High Quality</div><div style="color:var(--gray);font-size:.76rem;">Professional grade</div></div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-2"><div style="padding:22px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:#b8860b;margin-bottom:8px;"><i class="fas fa-dollar-sign"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.88rem;">Best Prices</div><div style="color:var(--gray);font-size:.76rem;">Competitive rates</div></div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-3"><div style="padding:22px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:#0099cc;margin-bottom:8px;"><i class="fas fa-thumbs-up"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.88rem;">Friendly Service</div><div style="color:var(--gray);font-size:.76rem;">Expert guidance</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS CARDS ===== -->
+<section id="business-cards" style="padding:80px 0;background:#fff;scroll-margin-top:160px;">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 animate-on-scroll">
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);">
+          <img src="images/business/bs5.jpg" alt="Business Cards Printing" style="width:100%;height:300px;object-fit:cover;object-position:right top;">
+        </div>
+      </div>
+      <div class="col-lg-6 animate-on-scroll animate-delay-2">
+        <div class="section-badge"><i class="fas fa-id-card"></i> Business Cards</div>
+        <h2 class="section-title mb-3" style="font-size:clamp(1.6rem,2.5vw,2.2rem);">Professional <span class="highlight">Business Cards</span></h2>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:20px;">Make a lasting first impression with our professional business cards. Choose from luxury finishes or standard options — we deliver quality every time.</p>
+        <a href="contact.html" class="btn-primary-cap"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 animate-on-scroll">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg" style="background:rgba(255,215,0,.15);color:#b8860b;"><i class="fas fa-crown"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Luxury Business Cards</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Premium thick stock with UV spot coating, foil stamping, embossing, or soft-touch lamination. Unforgettable first impressions.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">UV Coating</span><span class="service-tag">Foil Stamping</span><span class="service-tag">Embossed</span><span class="service-tag">Soft Touch</span><span class="service-tag">Rounded Corners</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 animate-on-scroll animate-delay-1">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg s2"><i class="fas fa-id-card"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Standard Business Cards</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Full-colour, double-sided printing on quality card stock. Perfect for networking, events, and everyday use. Fast turnaround.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">Full Colour</span><span class="service-tag">Double-Sided</span><span class="service-tag">Matte/Gloss</span><span class="service-tag">Fast Print</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLYERS & PAMPHLETS ===== -->
+<section id="flyers" style="padding:80px 0;background:var(--light-bg);scroll-margin-top:160px;">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-lg-2 animate-on-scroll">
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);">
+          <img src="images/flyer/f5.jpg" alt="Flyers and Pamphlets" style="width:100%;height:300px;object-fit:cover;object-position:top;">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1 animate-on-scroll animate-delay-2">
+        <div class="section-badge"><i class="fas fa-images"></i> Flyers &amp; Pamphlets</div>
+        <h2 class="section-title mb-3" style="font-size:clamp(1.6rem,2.5vw,2.2rem);">Eye-Catching <span class="highlight">Flyers &amp; Pamphlets</span></h2>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:20px;">Promote your business or event in style. We print full-colour flyers, tri-fold pamphlets, brochures, door hangers, and postcards with exceptional clarity.</p>
+        <a href="contact.html" class="btn-primary-cap"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 animate-on-scroll">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg s4"><i class="fas fa-file-image"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Flyers</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Full-colour promotional flyers in all standard sizes. Single and double-sided. Great for events, promotions, and campaigns.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">Letter / Legal</span><span class="service-tag">Tabloid</span><span class="service-tag">Single/Double</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-1">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg s3"><i class="fas fa-book-open"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Tri-Fold Pamphlets</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Professional bi-fold and tri-fold pamphlets. Perfect for menus, event programs, product info, and real estate listings.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">Bi-Fold</span><span class="service-tag">Tri-Fold</span><span class="service-tag">Gloss/Matte</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-2">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg s1"><i class="fas fa-mail-bulk"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Postcards &amp; Door Hangers</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Full-colour postcards for direct mail campaigns and eye-catching door hanger flyers for local marketing.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">Postcards</span><span class="service-tag">Door Hangers</span><span class="service-tag">Full Colour</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BROCHURES & BOOKLETS ===== -->
+<section id="brochures" style="padding:80px 0;background:#fff;scroll-margin-top:160px;">
+  <div class="container">
+    <div class="section-badge"><i class="fas fa-book"></i> Brochures &amp; Booklets</div>
+    <h2 class="section-title mb-2" style="font-size:clamp(1.6rem,2.5vw,2.2rem);"><span class="highlight">Brochures, Booklets</span> &amp; Menus</h2>
+    <p class="section-subtitle mb-5">High quality printing for your brand — perfect for marketing, menus, catalogues, and events.</p>
+    <div class="row g-4">
+      <div class="col-md-4 animate-on-scroll">
+        <div class="service-card"><div class="service-icon s4"><i class="fas fa-book-open"></i></div><h3 class="service-title">Brochures</h3><p class="service-desc">Bi-fold and tri-fold brochures on gloss or matte stock. Great for business, real estate, and events.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="service-tag">Bi-Fold</span><span class="service-tag">Tri-Fold</span><span class="service-tag">Gloss/Matte</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Order Now</a></div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-1">
+        <div class="service-card"><div class="service-icon s5"><i class="fas fa-book"></i></div><h3 class="service-title">Booklets</h3><p class="service-desc">Saddle-stitched and perfect-bound booklets. Ideal for catalogues, reports, programs, and magazines.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="service-tag">Saddle-Stitch</span><span class="service-tag">Perfect Bound</span><span class="service-tag">Custom Pages</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Order Now</a></div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-2">
+        <div class="service-card"><div class="service-icon s6"><i class="fas fa-utensils"></i></div><h3 class="service-title">Menus &amp; Programs</h3><p class="service-desc">Restaurant menus, event programs, and bookmarks. Laminated options available for durability.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="service-tag">Laminated</span><span class="service-tag">Custom Size</span><span class="service-tag">Full Colour</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Order Now</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BANNERS & SIGNS (BEFORE LARGE FORMAT) ===== -->
+<section id="banners" style="padding:80px 0;background:var(--light-bg);scroll-margin-top:160px;">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 animate-on-scroll">
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);">
+          <img src="images/vinyl/v1.jpg" alt="Vinyl Banners and Signs" style="width:100%;height:300px;object-fit:cover;">
+        </div>
+      </div>
+      <div class="col-lg-6 animate-on-scroll animate-delay-2">
+        <div class="section-badge"><i class="fas fa-flag"></i> Banners &amp; Signs</div>
+        <h2 class="section-title mb-3" style="font-size:clamp(1.6rem,2.5vw,2.2rem);">Vibrant Banners <span class="highlight">That Get Noticed</span></h2>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:20px;">Vinyl, Mesh Fabric and Roll-Up (Retractable) banners — fast, durable, and colour-true. Indoor &amp; outdoor solutions in all sizes.</p>
+        <a href="contact.html" class="btn-primary-cap"><i class="fas fa-flag"></i> Get a Quote</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <!-- Roll-Up Banners with image -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll">
+        <div class="service-card-full">
+          <div style="height:180px;overflow:hidden;">
+            <img src="images/bannersrollups/br2.jpg" alt="Roll-Up Retractable Banners" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="service-card-header" style="padding-top:20px;">
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Roll-Up / Retractable Banners</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Retractable step-up backdrops with carry case. Perfect for trade shows, events, and retail display.</p>
+          </div>
+          <div class="service-card-body">
+            <div style="background:rgba(0,48,135,.07);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+              <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:.82rem;">33"×80" with Stand</span>
+              <span style="font-family:'Montserrat',sans-serif;font-weight:900;color:var(--secondary);font-size:1rem;">$299</span>
+            </div>
+            <div class="service-tags"><span class="service-tag">Retractable</span><span class="service-tag">Carry Case</span><span class="service-tag">Trade Shows</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Vinyl Banners with image -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1">
+        <div class="service-card-full">
+          <div style="height:180px;overflow:hidden;">
+            <img src="images/vinyl/v2.jpg" alt="Vinyl Banners Outdoor" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="service-card-header" style="padding-top:20px;">
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Vinyl Banners</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">13oz/15oz vinyl with hem &amp; grommets. Wind slits available. Indoor and outdoor use in any size.</p>
+          </div>
+          <div class="service-card-body">
+            <div style="background:rgba(0,48,135,.07);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+              <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:.82rem;">3'×6' Vinyl (hem + grommets)</span>
+              <span style="font-family:'Montserrat',sans-serif;font-weight:900;color:var(--secondary);font-size:1rem;">$79</span>
+            </div>
+            <div class="service-tags"><span class="service-tag">Indoor</span><span class="service-tag">Outdoor</span><span class="service-tag">Custom Sizes</span><span class="service-tag">CMYK</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Mesh & Fabric -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-2">
+        <div class="service-card-full">
+          <div class="service-card-header">
+            <div class="service-icon-lg s5"><i class="fas fa-sign"></i></div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;margin-bottom:8px;">Mesh, Fabric &amp; Signs</h3>
+            <p style="color:var(--gray);font-size:.88rem;line-height:1.7;">Wind-friendly mesh for fences &amp; construction sites. Fabric banners: soft, wrinkle-resistant, rich colour. A-Frame &amp; X-Stand signs available.</p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags"><span class="service-tag">Mesh</span><span class="service-tag">Fabric</span><span class="service-tag">A-Frame</span><span class="service-tag">X-Stand</span></div>
+            <a href="contact.html" class="btn-outline-cap mt-3" style="font-size:.82rem;padding:9px 20px;">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- File Specs for Banners -->
+    <div style="background:var(--primary);border-radius:var(--radius);padding:28px 32px;margin-top:32px;color:#fff;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:12px;color:var(--accent-yellow);font-size:1rem;"><i class="fas fa-file-alt me-2"></i>File Submission Guidelines for Banners</h4>
+          <div class="row g-2" style="font-size:.85rem;color:rgba(255,255,255,.8);">
+            <div class="col-sm-6"><i class="fas fa-check-circle me-2" style="color:var(--accent-yellow);"></i>Files: PDF / AI / PSD (CMYK, fonts embedded)</div>
+            <div class="col-sm-6"><i class="fas fa-check-circle me-2" style="color:var(--accent-yellow);"></i>Bleed: 0.25" on all sides</div>
+            <div class="col-sm-6"><i class="fas fa-check-circle me-2" style="color:var(--accent-yellow);"></i>Resolution: 150 DPI minimum at final size</div>
+            <div class="col-sm-6"><i class="fas fa-check-circle me-2" style="color:var(--accent-yellow);"></i>Colour mode: CMYK (not RGB)</div>
+          </div>
+          <div style="margin-top:12px;font-size:.82rem;color:rgba(255,255,255,.6);">
+            <i class="fas fa-cloud-upload-alt me-1"></i> Sending large files? Use <a href="https://wetransfer.com" target="_blank" style="color:var(--accent-yellow);">wetransfer.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="contact.html" class="btn-secondary-cap" style="border-color:rgba(255,255,255,.5);">
+            <i class="fas fa-paper-plane"></i> Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LARGE FORMAT PRINTING (AFTER BANNERS) ===== -->
+<section id="large-format" style="padding:80px 0;background:#fff;scroll-margin-top:160px;">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-lg-2 animate-on-scroll">
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);">
+          <img src="images/largeformat/lf3.jpg" alt="Large Format Printing Machines" style="width:100%;height:300px;object-fit:cover;">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1 animate-on-scroll animate-delay-2">
+        <div class="section-badge"><i class="fas fa-expand-arrows-alt"></i> Large Format Printing</div>
+        <h2 class="section-title mb-3" style="font-size:clamp(1.6rem,2.5vw,2.2rem);">Large Format Printing <span class="highlight">That Stops Traffic</span></h2>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:20px;">Posters, signs, backdrops, rigid boards, wall graphics, PVC &amp; more. Vivid CMYK colour with perfect size &amp; contour cutting. Rush service available.</p>
+        <a href="contact.html" class="btn-primary-cap"><i class="fas fa-expand-arrows-alt"></i> Get a Quote</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 animate-on-scroll">
+        <div class="service-card"><div class="service-icon s2"><i class="fas fa-chalkboard"></i></div><h3 class="service-title">Rigid Boards &amp; Signage</h3><p class="service-desc">Corroplast, foamcore, PVC, and aluminum composite panels. Perfect for real estate signs, event displays, and point-of-sale.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;"><span class="service-tag">Corroplast</span><span class="service-tag">PVC</span><span class="service-tag">Aluminum</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Get Quote</a></div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-1">
+        <div class="service-card"><div class="service-icon s5"><i class="fas fa-th-large"></i></div><h3 class="service-title">Wall Graphics &amp; Backdrops</h3><p class="service-desc">Floor-to-ceiling wall wraps, step-and-repeat backdrops, and window graphics. Vivid CMYK colour with contour cutting.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;"><span class="service-tag">Wall Wraps</span><span class="service-tag">Step-Repeat</span><span class="service-tag">Contour Cut</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Get Quote</a></div>
+      </div>
+      <div class="col-md-4 animate-on-scroll animate-delay-2">
+        <div class="service-card"><div class="service-icon s4"><i class="fas fa-image"></i></div><h3 class="service-title">Posters &amp; Photo Prints</h3><p class="service-desc">High-resolution posters and photo prints on premium paper or canvas. All sizes. Pole pockets available. Rush turnaround available.</p><div class="service-tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;"><span class="service-tag">Photo Paper</span><span class="service-tag">Canvas</span><span class="service-tag">Pole Pockets</span></div><a href="contact.html" class="btn-outline-cap" style="font-size:.82rem;padding:9px 20px;">Get Quote</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATIONERY & MORE ===== -->
+<section id="stationery" style="padding:80px 0;background:var(--light-bg);scroll-margin-top:160px;">
+  <div class="container">
+    <div class="section-badge"><i class="fas fa-layer-group"></i> Stationery &amp; More</div>
+    <h2 class="section-title mb-2" style="font-size:clamp(1.6rem,2.5vw,2.2rem);">Complete <span class="highlight">Print Solutions</span></h2>
+    <p class="section-subtitle mb-5">Everything else you need to present your brand professionally.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 animate-on-scroll"><div class="service-card"><div class="service-icon s3"><i class="fas fa-calendar-alt"></i></div><h3 class="service-title">Calendars</h3><p class="service-desc">Custom wall and desk calendars for corporate gifts and brand promotion.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-1"><div class="service-card"><div class="service-icon s1"><i class="fas fa-sticky-note"></i></div><h3 class="service-title">Stickers &amp; Labels</h3><p class="service-desc">Die-cut, kiss-cut, and sheet stickers. Full-colour for labels and branding.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-2"><div class="service-card"><div class="service-icon s2"><i class="fas fa-magnet"></i></div><h3 class="service-title">Magnets</h3><p class="service-desc">Square corner and round/oval magnets. Car magnets and fridge magnets available.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-3"><div class="service-card"><div class="service-icon s4"><i class="fas fa-envelope-open-text"></i></div><h3 class="service-title">Envelopes</h3><p class="service-desc">Custom printed envelopes for professional correspondence and mailers.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll"><div class="service-card"><div class="service-icon s5"><i class="fas fa-file-invoice"></i></div><h3 class="service-title">NCR Forms</h3><p class="service-desc">Carbonless copy forms for invoices, work orders, and receipts. 2, 3 or 4-part.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-1"><div class="service-card"><div class="service-icon s6"><i class="fas fa-clipboard"></i></div><h3 class="service-title">Notepads</h3><p class="service-desc">Custom-branded notepads in any size. Great for offices, events, and giveaways.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-2"><div class="service-card"><div class="service-icon s3"><i class="fas fa-folder-open"></i></div><h3 class="service-title">Pocket Folders</h3><p class="service-desc">Professional presentation folders with custom design and business card slots.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-3"><div class="service-card"><div class="service-icon s1"><i class="fas fa-vote-yea"></i></div><h3 class="service-title">Election Printing</h3><p class="service-desc">Campaign materials — lawn signs, flyers, door hangers, banners, postcards.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll"><div class="service-card"><div class="service-icon s2"><i class="fas fa-home"></i></div><h3 class="service-title">Realtor Printing</h3><p class="service-desc">Feature sheets, just-listed postcards, open house signs, business cards for realtors.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-1"><div class="service-card"><div class="service-icon s4"><i class="fas fa-file-signature"></i></div><h3 class="service-title">Letterheads</h3><p class="service-desc">Professional letterheads matching your brand identity for formal correspondence.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-2"><div class="service-card"><div class="service-icon s5"><i class="fas fa-heart"></i></div><h3 class="service-title">Greeting Cards</h3><p class="service-desc">Custom greeting cards for holidays, birthdays, and corporate gifting.</p><a href="contact.html" class="service-link">Order <i class="fas fa-chevron-right"></i></a></div></div>
+      <div class="col-md-6 col-lg-3 animate-on-scroll animate-delay-3"><div class="service-card"><div class="service-icon s6"><i class="fas fa-cog"></i></div><h3 class="service-title">Custom Printing</h3><p class="service-desc">Don't see what you need? Contact us — we can print almost anything!</p><a href="contact.html" class="service-link">Contact Us <i class="fas fa-chevron-right"></i></a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section style="background:var(--primary);padding:60px 0;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-white mb-4 mb-lg-0">
+        <h2 style="font-family:'Montserrat',sans-serif;font-weight:900;margin-bottom:10px;font-size:1.8rem;">Ready to Get <span style="color:var(--accent-yellow);">Printing?</span></h2>
+        <p style="color:rgba(255,255,255,.75);margin:0;font-size:.95rem;">Contact us today for a quote. Rush service available — please enquire.<br>For large files use <a href="https://wetransfer.com" target="_blank" style="color:var(--accent-yellow);">wetransfer.com</a></p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="tel:4161234567" class="btn-secondary-cap me-3 mb-2" style="border-color:rgba(255,255,255,.5);"><i class="fas fa-phone"></i> 416-123-4567</a>
+        <a href="contact.html" class="btn-primary-cap mb-2"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer><div class="container"><div class="row g-5">
+  <div class="col-lg-4">
+    <div style="font-family:'Montserrat',sans-serif;font-size:.72rem;color:rgba(255,215,0,.7);letter-spacing:2px;margin-bottom:14px;text-transform:uppercase;"><img src="images/footer-logo.png" style="
+    width: 160px;"/></div>
+    <p class="footer-desc">A trusted one-stop printing shop. From business cards to building-size banners — quality you can count on, service with a smile.</p>
+<!--     <div class="footer-social">
+      <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div> -->
+  </div>
+  <div class="col-lg-2 col-md-4"><h3 class="footer-title">Quick Links</h3><ul class="footer-links"><li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li><li><a href="yearbook.html"><i class="fas fa-chevron-right"></i> Yearbooks</a></li><li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li><li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li></ul></div>
+  <div class="col-lg-3 col-md-4"><h3 class="footer-title">Our Services</h3><ul class="footer-links"><li><a href="services.html#business-cards"><i class="fas fa-chevron-right"></i> Business Cards</a></li><li><a href="services.html#flyers"><i class="fas fa-chevron-right"></i> Flyers &amp; Pamphlets</a></li><li><a href="services.html#brochures"><i class="fas fa-chevron-right"></i> Brochures</a></li><li><a href="services.html#banners"><i class="fas fa-chevron-right"></i> Banners &amp; Roll-Ups</a></li><li><a href="services.html#large-format"><i class="fas fa-chevron-right"></i> Large Format</a></li><li><a href="yearbook.html"><i class="fas fa-chevron-right"></i> Yearbooks</a></li></ul></div>
+  <div class="col-lg-3 col-md-4"><h3 class="footer-title">Contact Us</h3>
+    <div class="footer-contact-item"><div class="contact-icon-wrap"><i class="fas fa-phone"></i></div><div class="footer-contact-text"><a href="tel:4161234567" style="color:inherit;text-decoration:none;">416-123-4567 </a></div></div>
+    <div class="footer-contact-item"><div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:Copyallandprint@gmail.com" style="color:inherit;text-decoration:none;">Copyallandprint@gmail.com</a></div></div>
+    <div class="footer-contact-item" style="border-bottom:none;margin-bottom:0;padding-bottom:0;"><div class="contact-icon-wrap"><i class="fas fa-clock"></i></div><div class="footer-contact-text">Mon–Fri: 9am–6pm</div></div>
+    <div class="mt-3"><div class="rush-badge"><i class="fas fa-bolt"></i> Rush Service Available</div><div class="rush-enquire">Please enquire for availability</div></div>
+  </div>
+</div></div>
+<div class="footer-bottom"><div class="container"><p>&copy; 2025 <a href="index.html">Copy All and Print</a>. All Rights Reserved. | <a href="tel:4161234567">416-123-4567 </a> | <a href="mailto:Copyallandprint@gmail.com">Copyallandprint@gmail.com</a></p></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  if(window.innerWidth>=992){document.querySelectorAll('.nav-item.dropdown').forEach(function(d){d.addEventListener('mouseenter',function(){var m=this.querySelector('.dropdown-menu');if(m){m.classList.add('show');this.querySelector('.nav-link').setAttribute('aria-expanded','true');}});d.addEventListener('mouseleave',function(){var m=this.querySelector('.dropdown-menu');if(m){m.classList.remove('show');this.querySelector('.nav-link').setAttribute('aria-expanded','false');}});d.querySelector('.nav-link').addEventListener('click',function(e){if(window.innerWidth>=992){window.location.href=this.getAttribute('href');e.preventDefault();}});});}
+  document.getElementById('heroCarousel').addEventListener('slide.bs.carousel',function(e){document.querySelectorAll('.curr').forEach(function(el){el.textContent=String(e.to+1).padStart(2,'0');});});
+</script>
+</body></html>
