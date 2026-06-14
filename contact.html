@@ -104,74 +104,64 @@
 <form name="contact"
       method="POST"
       data-netlify="true"
-      netlify-honeypot="website"
-      action="/thank-you.html">
+      netlify-honeypot="bot-field"
+      action="/thank-you.html"
+      class="row g-3">
 
+  <!-- REQUIRED hidden field -->
   <input type="hidden" name="form-name" value="contact">
 
-      <div class="row g-3">
+  <!-- Honeypot (spam protection) -->
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
 
-        <!-- Full Name -->
-        <div class="col-md-6">
-          <label class="form-label">Full Name <span style="color:var(--secondary);">*</span></label>
-          <input type="text" class="form-control" name="full_name" placeholder="Your full name" required>
-        </div>
-
-        <!-- Email -->
-        <div class="col-md-6">
-          <label class="form-label">Email Address <span style="color:var(--secondary);">*</span></label>
-          <input type="email" class="form-control" name="email" placeholder="your@email.com" required>
-        </div>
-
-        <!-- Phone -->
-        <div class="col-md-6">
-          <label class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" name="phone" placeholder="905-000-0000">
-        </div>
-
-        <!-- Subject -->
-        <div class="col-md-6">
-          <label class="form-label">Subject <span style="color:var(--secondary);">*</span></label>
-          <select class="form-select" name="subject" required>
-            <option value="" disabled selected>Select a subject</option>
-            <option>Get a Quote</option>
-            <option>Business Cards</option>
-            <option>Flyers & Pamphlets</option>
-            <option>Brochures & Booklets</option>
-            <option>Banners & Roll-Ups</option>
-            <option>Large Format Printing</option>
-            <option>Yearbook Printing</option>
-            <option>Stickers & Magnets</option>
-            <option>Rush Order Enquiry</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <!-- Message -->
-        <div class="col-12">
-          <label class="form-label">Message <span style="color:var(--secondary);">*</span></label>
-          <textarea class="form-control" name="message" rows="5" required
-            placeholder="Tell us about your project..."></textarea>
-        </div>
-
-        <!-- Honeypot -->
-        <div style="display:none;">
-          <input type="text" name="website" tabindex="-1" autocomplete="off">
-        </div>
-
-        <!-- Submit -->
-        <div class="col-12">
-          <button type="submit" class="btn-primary-cap w-100 justify-content-center" style="font-size:1rem;padding:15px;">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </div>
-
-      </div>
-    </form>
-
+  <!-- Full Name -->
+  <div class="col-md-6">
+    <label class="form-label">Full Name *</label>
+    <input type="text" name="full_name" class="form-control" required>
   </div>
-</div>
 
+  <!-- Email -->
+  <div class="col-md-6">
+    <label class="form-label">Email *</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+
+  <!-- Phone -->
+  <div class="col-md-6">
+    <label class="form-label">Phone</label>
+    <input type="tel" name="phone" class="form-control">
+  </div>
+
+  <!-- Subject -->
+  <div class="col-md-6">
+    <label class="form-label">Subject *</label>
+    <select name="subject" class="form-select" required>
+      <option value="">Select</option>
+      <option>Get a Quote</option>
+      <option>Business Cards</option>
+      <option>Flyers</option>
+      <option>Brochures</option>
+      <option>Banners</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <!-- Message -->
+  <div class="col-12">
+    <label class="form-label">Message *</label>
+    <textarea name="message" class="form-control" rows="5" required></textarea>
+  </div>
+
+  <!-- Submit -->
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary w-100">
+      Send Message
+    </button>
+  </div>
+
+</form>
       <!-- CONTACT INFO -->
       <div class="col-lg-5 animate-on-scroll animate-delay-2">
         <div class="contact-info-card">
