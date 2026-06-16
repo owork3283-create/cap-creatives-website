@@ -438,7 +438,9 @@ width: 180px!important;
   }
 }
 @media(max-width:576px){
-  .navbar-brand img{width:56px;height:56px;}
+  .navbar-brand img{        
+    width: 72px;
+    height: 68px;}
   .brand-cap{font-size:1.3rem;}
   #heroCarousel .carousel-item{height:90vh;min-height:480px;}
   .slide-title{font-size:1.7rem;}
