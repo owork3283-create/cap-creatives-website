@@ -2,7 +2,10 @@
    COPY ALL AND PRINT — v2 Stylesheet
    =================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&display=swap');
-
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 :root {
   --primary:#003087; --secondary:#E8003D;
   --accent-yellow:#FFD700; --accent-cyan:#00BFFF; --accent-green:#00C851;
@@ -414,7 +417,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:80px 0 0;}
 /* RESPONSIVE */
 @media(max-width:991px){
   .navbar-brand img{width:70px;height:70px;}
-  #heroCarousel{margin-top:86px;}
+  #heroCarousel{margin-top:74px;}
   #heroCarousel .carousel-item{height:85vh;min-height:500px;}
   .slide-visual{display:none!important;}
   .stats-bar{padding:18px;margin-top:-30px;border-radius:14px;}
@@ -426,6 +429,13 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:80px 0 0;}
   .dropdown-menu{box-shadow:none;border-top:none;background:var(--light-bg);}
   .contact-form-wrap{padding:26px 18px;}
   .page-hero{padding:140px 0 60px;}
+  .preloader-logo img{
+
+width: 180px!important;
+  }
+  .rushabout{
+    display: none!important;
+  }
 }
 @media(max-width:576px){
   .navbar-brand img{width:56px;height:56px;}
