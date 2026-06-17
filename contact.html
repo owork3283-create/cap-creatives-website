@@ -14,7 +14,6 @@
 <body>
 
 <!-- NAVBAR -->
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top deskstopview">
   <div class="container">
     <a class="navbar-brand" href="index.html">
@@ -66,196 +65,208 @@
   </div>
 </nav>
 
+
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Contact Us</li></ol>
+      <ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Portfolio</li></ol>
     </nav>
-    <h1 class="page-hero-title">Get in <span style="color:var(--accent-yellow);">Touch</span></h1>
-    <p class="page-hero-sub">Request a quote or ask us a question — we'd love to hear from you</p>
-    <div class="mt-4">
-      <div class="rush-badge"><i class="fas fa-bolt"></i> Rush Service Available — Please Enquire</div>
-    </div>
+    <h1 class="page-hero-title">Our <span style="color:var(--accent-yellow);">Portfolio</span></h1>
+    <p class="page-hero-sub">Real print work — quality you can see</p>
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section style="padding:80px 0;background:var(--light-bg);">
+<!-- PORTFOLIO -->
+<section style="padding:90px 0;background:#fff;">
   <div class="container">
-    <div class="row g-5">
-
-<!-- FORM -->
-<div class="col-lg-7 animate-on-scroll">
-  <div class="contact-form-wrap">
-
-    <div class="section-badge mb-3">
-      <i class="fas fa-paper-plane"></i> Send a Message
+    <div class="text-center mb-5">
+      <div class="section-badge"><i class="fas fa-images"></i> Our Work</div>
+      <h2 class="section-title" style="font-size:clamp(1.8rem,3vw,2.5rem);">Print Work We're <span class="highlight">Proud Of</span></h2>
+      <p class="section-subtitle mx-auto mt-3">From small business cards to massive event banners — here's a sample of what we do best.</p>
     </div>
 
-    <h2 class="section-title mb-2" style="font-size:1.8rem;">
-      Request a <span class="highlight">Free Quote</span>
-    </h2>
-
-    <p style="color:var(--gray);margin-bottom:28px;font-size:.92rem;line-height:1.7;">
-      Fill in the form below and we'll get back to you as soon as possible.
-    </p>
-
-    <!-- Info box -->
-    <div style="background:rgba(0,48,135,.06);border:1px solid rgba(0,48,135,.15);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:24px;display:flex;align-items:flex-start;gap:12px;">
-      <i class="fas fa-cloud-upload-alt" style="color:var(--primary);font-size:1.2rem;margin-top:2px;flex-shrink:0;"></i>
-      <div style="font-size:.87rem;color:#444;line-height:1.6;">
-        <strong style="font-family:'Montserrat',sans-serif;color:var(--primary);">Sending large files?</strong><br>
-        Please use <a href="https://wetransfer.com" target="_blank" rel="noopener" style="color:var(--secondary);font-weight:700;">wetransfer.com</a>
-      </div>
+    <!-- Filter -->
+    <div class="portfolio-filter" role="tablist">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="banners">Banners &amp; Signs</button>
+      <button class="filter-btn" data-filter="cards">Business Cards</button>
+      <button class="filter-btn" data-filter="flyers">Flyers &amp; Pamphlets</button>
+      <button class="filter-btn" data-filter="largeformat">Large Format</button>
+      <button class="filter-btn" data-filter="other">Other Print</button>
     </div>
 
-    <!-- Alerts -->
-    <div class="alert-success-cap" id="successMsg">
-      <i class="fas fa-check-circle me-2"></i>
-      <strong>Message sent!</strong> We'll be in touch shortly. Thank you!
-    </div>
+    <!-- Grid with REAL PHOTOS -->
+    <div class="row g-4" id="portfolioGrid">
 
-    <div class="alert-error-cap" id="errorMsg">
-      <i class="fas fa-exclamation-circle me-2"></i>
-      Something went wrong. Please try again or call us directly.
-    </div>
-
-    <!-- NETLIFY FORM -->
-<form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="row g-3">
-
-  <!-- REQUIRED hidden field -->
-  <input type="hidden" name="form-name" value="contact">
-
-
-  <!-- Honeypot (spam protection) -->
-  <!-- <p style="display:none;">
-    <label>Don’t fill this out: <input name="bot-field"></label>
-  </p> -->
-
-  <!-- Full Name -->
-  <div class="col-md-6">
-    <label class="form-label">Full Name *</label>
-    <input type="text" name="full_name" class="form-control" required>
-  </div>
-
-  <!-- Email -->
-  <div class="col-md-6">
-    <label class="form-label">Email *</label>
-    <input type="email" name="email" class="form-control" required>
-  </div>
-
-  <!-- Phone -->
-  <div class="col-md-6">
-    <label class="form-label">Phone</label>
-    <input type="tel" name="phone" class="form-control">
-  </div>
-
-  <!-- Subject -->
-  <div class="col-md-6">
-    <label class="form-label">Subject *</label>
-    <select name="subject" class="form-select" required>
-      <option value="">Select</option>
-      <option>Get a Quote</option>
-      <option>Business Cards</option>
-      <option>Flyers</option>
-      <option>Brochures</option>
-      <option>Banners</option>
-      <option>Other</option>
-    </select>
-  </div>
-
-  <!-- Message -->
-  <div class="col-12">
-    <label class="form-label">Message *</label>
-    <textarea name="message" class="form-control" rows="5" required></textarea>
-  </div>
-
-  <!-- Submit -->
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary w-100">
-      Send Message
-    </button>
-  </div>
-
-</form>
-
-  </div>
-</div>
-
-      <!-- CONTACT INFO -->
-      <div class="col-lg-5 animate-on-scroll animate-delay-2">
-        <div class="contact-info-card">
-          <div class="section-badge" style="background:rgba(255,215,0,.15);border-color:rgba(255,215,0,.3);color:var(--accent-yellow);margin-bottom:22px;">
-            <i class="fas fa-info-circle"></i> Contact Information
+      <!-- Roll-Up / Vinyl Banners — using hero-banners-opt1 (shows actual retractable) -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll portfolio-item" data-category="banners">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/banners/cap-banner2.jpg" alt="Roll-Up Retractable Banners" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Roll-Up Banners</div><div class="portfolio-cat">Retractable · Trade Shows · Events</div></div>
           </div>
-          <h3 style="font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:1.35rem;margin-bottom:6px;">We'd Love to Hear From You</h3>
-          <p style="color:rgba(255,255,255,.6);font-size:.88rem;margin-bottom:26px;line-height:1.7;">Reach out by phone, email, or fill in the form and we'll get back to you promptly.</p>
-
-          <div class="contact-info-item">
-            <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <div class="cinfo-label">Phone</div>
-              <div class="cinfo-value"><a href="tel:9055537862" style="color:inherit;text-decoration:none;">905-553-7862</a></div>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <div class="cinfo-label">Email</div>
-              <div class="cinfo-value"><a href="mailto:info@copyallprint.ca" style="color:inherit;text-decoration:none;word-break:break-all;">info@copyallandprint.ca</a></div>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="cinfo-icon"><i class="fas fa-clock"></i></div>
-            <div>
-              <div class="cinfo-label">Business Hours</div>
-              <div class="cinfo-value">Monday – Friday: 9:00am – 6:00pm</div>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="cinfo-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <div>
-              <div class="cinfo-label">Send Large Files</div>
-              <div class="cinfo-value"><a href="https://wetransfer.com" target="_blank" rel="noopener" style="color:var(--accent-yellow);text-decoration:none;">wetransfer.com</a></div>
-            </div>
-          </div>
-
-          <div class="contact-info-item" style="border-bottom:none;margin-bottom:0;padding-bottom:0;">
-            <div class="cinfo-icon"><i class="fas fa-bolt"></i></div>
-            <div>
-              <div class="cinfo-label">Rush Orders</div>
-              <div class="cinfo-value">Rush service can be available<br><span style="font-size:.8rem;color:rgba(255,255,255,.5);">Please enquire for availability</span></div>
-            </div>
-          </div>
-
-          <!-- Social links -->
-<!--           <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);">
-            <div class="cinfo-label" style="margin-bottom:12px;">Follow Us</div>
-            <div class="footer-social">
-              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div> -->
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Retractable Roll-Up Banners</div>
+          <span style="display:inline-block;background:rgba(0,48,135,.1);color:var(--primary);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Banners &amp; Signs</span>
         </div>
       </div>
+
+      <!-- Vinyl Banners — hero-banners-opt (shows the actual CAP banner outside building) -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1 portfolio-item" data-category="banners">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/vinyl/v5.jpg" alt="Vinyl Banners Outdoor" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Vinyl Banners</div><div class="portfolio-cat">Outdoor · Storefront · Events</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Vinyl Banner — Outdoor Display</div>
+          <span style="display:inline-block;background:rgba(0,48,135,.1);color:var(--primary);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Banners &amp; Signs</span>
+        </div>
+      </div>
+
+      <!-- Large Format Printing — hero-largeformat-opt -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-2 portfolio-item" data-category="largeformat">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/largeformat/lf6.jpg" alt="Large Format Printing Machines" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Large Format Printing</div><div class="portfolio-cat">Posters · Signs · Backdrops</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Large Format / Wide Print</div>
+          <span style="display:inline-block;background:rgba(0,200,81,.1);color:var(--accent-green);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Large Format</span>
+        </div>
+      </div>
+
+      <!-- Business Cards — hero-main-opt (shows the full flyer with BC section highlighted) -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll portfolio-item" data-category="cards">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/business/bs5.jpg" alt="Business Cards Printing" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;object-position:right top;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Business Cards</div><div class="portfolio-cat">Luxury · Standard · UV Coating</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Professional Business Cards</div>
+          <span style="display:inline-block;background:rgba(232,0,61,.1);color:var(--secondary);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Business Cards</span>
+        </div>
+      </div>
+
+      <!-- Flyers — hero-flyer-opt -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1 portfolio-item" data-category="flyers">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/flyer/f6.jpg" alt="Flyers and Pamphlets" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;object-position:top;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Flyers &amp; Pamphlets</div><div class="portfolio-cat">Full Colour · Single &amp; Double Sided</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Full-Colour Promotional Flyer</div>
+          <span style="display:inline-block;background:rgba(255,215,0,.15);color:#b8860b;font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Flyers &amp; Pamphlets</span>
+        </div>
+      </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1 portfolio-item" data-category="flyers">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/flyer/f3.jpg" alt="Flyers and Pamphlets" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;object-position:top;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Flyers &amp; Pamphlets</div><div class="portfolio-cat">Full Colour · Single &amp; Double Sided</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Full-Colour Promotional Flyer</div>
+          <span style="display:inline-block;background:rgba(255,215,0,.15);color:#b8860b;font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Flyers &amp; Pamphlets</span>
+        </div>
+      </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1 portfolio-item" data-category="flyers">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/flyer/f2.jpg" alt="Flyers and Pamphlets" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;object-position:top;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Flyers &amp; Pamphlets</div><div class="portfolio-cat">Full Colour · Single &amp; Double Sided</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Full-Colour Promotional Flyer</div>
+          <span style="display:inline-block;background:rgba(255,215,0,.15);color:#b8860b;font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Flyers &amp; Pamphlets</span>
+        </div>
+      </div>
+
+      <!-- CAP Banner brand shot — copyallprint-banner -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-2 portfolio-item" data-category="banners">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/vinyl/v3.jpg" alt="Copy All and Print branded banner" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Brand Banners</div><div class="portfolio-cat">Custom Design · Full Colour</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Custom Brand Banner</div>
+          <span style="display:inline-block;background:rgba(0,48,135,.1);color:var(--primary);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Banners &amp; Signs</span>
+        </div>
+      </div>
+
+      <!-- Yearbook — yearbook1 -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll portfolio-item" data-category="other">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/yearbook/yearbook1.jpg" alt="Yearbook Printing" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Yearbook Printing</div><div class="portfolio-cat">Schools · Organisations · Communities</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">School Yearbook</div>
+          <span style="display:inline-block;background:rgba(128,0,128,.1);color:purple;font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Other Print</span>
+        </div>
+      </div>
+
+      <!-- Yearbook 2 -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-1 portfolio-item" data-category="other">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/yearbook/yearbook2.jpg" alt="Yearbook Students" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Yearbook Memories</div><div class="portfolio-cat">Custom Layouts · Premium Paper</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Premium Yearbook Pages</div>
+          <span style="display:inline-block;background:rgba(128,0,128,.1);color:purple;font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Other Print</span>
+        </div>
+      </div>
+
+      <!-- About/general print shop — about.jpg -->
+      <div class="col-md-6 col-lg-4 animate-on-scroll animate-delay-2 portfolio-item" data-category="largeformat">
+        <div style="border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow-card);transition:var(--transition);">
+          <img src="images/largeformat/lf5.jpg" alt="Professional printing services" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+          <div class="portfolio-overlay">
+            <div><div class="portfolio-name">Professional Printing</div><div class="portfolio-cat">State-of-the-Art Equipment</div></div>
+          </div>
+        </div>
+        <div style="padding:14px 0 0;">
+          <div style="font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;">Professional Print Services</div>
+          <span style="display:inline-block;background:rgba(0,200,81,.1);color:var(--accent-green);font-size:.72rem;font-weight:600;padding:3px 11px;border-radius:20px;font-family:'Montserrat',sans-serif;">Large Format</span>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- CTA -->
+    <div class="text-center mt-5 pt-2">
+      <p style="color:var(--gray);margin-bottom:18px;font-size:1rem;">Like what you see? Let's create something great for your business.</p>
+      <a href="contact.html" class="btn-primary-cap"><i class="fas fa-paper-plane"></i> Start Your Project</a>
     </div>
   </div>
 </section>
 
-<!-- WHY CONTACT STRIP -->
-<section style="background:#fff;padding:60px 0;">
+<!-- STATS -->
+<section style="background:var(--primary);padding:60px 0;">
   <div class="container">
     <div class="row g-4 text-center">
-      <div class="col-md-3 col-6 animate-on-scroll"><div style="padding:22px 16px;background:var(--light-bg);border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:var(--secondary);margin-bottom:8px;"><i class="fas fa-graduation-cap"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.87rem;margin-bottom:3px;">Students Welcome</div><div style="color:var(--gray);font-size:.78rem;">Special pricing available</div></div></div>
-      <div class="col-md-3 col-6 animate-on-scroll animate-delay-1"><div style="padding:22px 16px;background:var(--light-bg);border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:var(--primary);margin-bottom:8px;"><i class="fas fa-dollar-sign"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.87rem;margin-bottom:3px;">Competitive Prices</div><div style="color:var(--gray);font-size:.78rem;">Best value in the area</div></div></div>
-      <div class="col-md-3 col-6 animate-on-scroll animate-delay-2"><div style="padding:22px 16px;background:var(--light-bg);border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:#b8860b;margin-bottom:8px;"><i class="fas fa-award"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.87rem;margin-bottom:3px;">Professional Quality</div><div style="color:var(--gray);font-size:.78rem;">Always outstanding</div></div></div>
-      <div class="col-md-3 col-6 animate-on-scroll animate-delay-3"><div style="padding:22px 16px;background:var(--light-bg);border-radius:var(--radius);box-shadow:var(--shadow-card);"><div style="font-size:1.8rem;color:#0099cc;margin-bottom:8px;"><i class="fas fa-users"></i></div><div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:.87rem;margin-bottom:3px;">Friendly Service</div><div style="color:var(--gray);font-size:.78rem;">Expert help always</div></div></div>
+      <div class="col-6 col-md-3 animate-on-scroll"><div style="color:var(--accent-yellow);font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.3rem;" data-target="500" data-suffix="+">500+</div><div style="color:rgba(255,255,255,.7);font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">Happy Clients</div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-1"><div style="color:var(--accent-yellow);font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.3rem;" data-target="1000" data-suffix="+">1000+</div><div style="color:rgba(255,255,255,.7);font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">Projects Completed</div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-2"><div style="color:var(--accent-yellow);font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.3rem;" data-target="25" data-suffix="+">25+</div><div style="color:rgba(255,255,255,.7);font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">Print Services</div></div>
+      <div class="col-6 col-md-3 animate-on-scroll animate-delay-3"><div style="color:var(--accent-yellow);font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.3rem;">5.0★</div><div style="color:rgba(255,255,255,.7);font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">Average Rating</div></div>
     </div>
   </div>
 </section>
@@ -282,57 +293,14 @@
     <div class="mt-3"><div class="rush-badge"><i class="fas fa-bolt"></i> Rush Service Available</div><div class="rush-enquire">Please enquire for availability</div></div>
   </div>
 </div></div>
-<div class="footer-bottom"><div class="container"><p>&copy; 2025 <a href="index.html">Copy All and Print</a>. All Rights Reserved. | <a href="tel:9055537862">905-553-7862</a> | <a href="mailto:info@copyallandprint.ca">info@copyallandprint.ca</a></p></div></div>
+<div class="footer-bottom"><div class="container"><p>&copy; 2025 <a href="index.html">Copy All and Print</a>. All Rights Reserved. | <a href="tel:9055537862">
+905-553-7862</a> | <a href="mailto:info@copyallandprint.ca">info@copyallandprint.ca</a></p></div></div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-if (window.innerWidth >= 992) {
-
-  document.querySelectorAll('.nav-item.dropdown').forEach(function (d) {
-
-    d.addEventListener('mouseenter', function () {
-      var m = this.querySelector('.dropdown-menu');
-      if (m) {
-        m.classList.add('show');
-        const link = this.querySelector('.nav-link');
-        if (link) link.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    d.addEventListener('mouseleave', function () {
-      var m = this.querySelector('.dropdown-menu');
-      if (m) {
-        m.classList.remove('show');
-        const link = this.querySelector('.nav-link');
-        if (link) link.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    const navLink = d.querySelector('.nav-link');
-    if (navLink) {
-      navLink.addEventListener('click', function (e) {
-        if (window.innerWidth >= 992) {
-          window.location.href = this.getAttribute('href');
-          e.preventDefault();
-        }
-      });
-    }
-
-  });
-}
-
-
-// SAFE carousel fix (no crash)
-const heroCarousel = document.getElementById('heroCarousel');
-
-if (heroCarousel) {
-  heroCarousel.addEventListener('slide.bs.carousel', function (e) {
-    document.querySelectorAll('.curr').forEach(function (el) {
-      el.textContent = String(e.to + 1).padStart(2, '0');
-    });
-  });
-}
+  if(window.innerWidth>=992){document.querySelectorAll('.nav-item.dropdown').forEach(function(d){d.addEventListener('mouseenter',function(){var m=this.querySelector('.dropdown-menu');if(m){m.classList.add('show');this.querySelector('.nav-link').setAttribute('aria-expanded','true');}});d.addEventListener('mouseleave',function(){var m=this.querySelector('.dropdown-menu');if(m){m.classList.remove('show');this.querySelector('.nav-link').setAttribute('aria-expanded','false');}});d.querySelector('.nav-link').addEventListener('click',function(e){if(window.innerWidth>=992){window.location.href=this.getAttribute('href');e.preventDefault();}});});}
+  document.getElementById('heroCarousel').addEventListener('slide.bs.carousel',function(e){document.querySelectorAll('.curr').forEach(function(el){el.textContent=String(e.to+1).padStart(2,'0');});});
 </script>
 </body></html>
