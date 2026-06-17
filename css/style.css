@@ -247,6 +247,10 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;}
 .feature-icon.cyan{background:rgba(0,191,255,.1);color:#0099cc;}
 .feature-title{font-family:'Montserrat',sans-serif;font-weight:700;margin-bottom:3px;}
 .feature-desc{color:var(--gray);font-size:.87rem;line-height:1.6;}
+#about img{
+      border-radius: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
 /* WHY US */
 .why-card{text-align:center;padding:34px 22px;border-radius:var(--radius);
